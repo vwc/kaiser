@@ -11,3 +11,26 @@
     background: url(../assets/img/header-bg.jpg) no-repeat 0 0 transparent;
     background-size: cover;
 }
+
+.app-header-hero {
+    padding: @line-height-computed;
+    padding: @jumbotron-padding;
+    margin-bottom: @jumbotron-padding;
+    font-size: @jumbotron-font-size;
+    font-weight: 200;
+    line-height: (@line-height-base * 1.5);
+    color: @gray-lighter;
+    text-align: center;    
+    h1,
+    .h1 {
+      line-height: 1;
+      color: @jumbotron-heading-color;
+    }
+    p {
+      line-height: 1.4;
+    }
+}
+
+.app-header-action {
+    text-align: center;
+}

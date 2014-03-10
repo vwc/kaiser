@@ -174,8 +174,8 @@ module.exports = function (grunt) {
             },
             'clean-source-js': {
                 path: 'dist/',
-                pattern: '../dist/js/rms.js',
-                replacement: 'js/rms.min.js',
+                pattern: '../dist/js/kaiser.js',
+                replacement: 'js/kaiser.min.js',
                 recursive: true
             }
         },

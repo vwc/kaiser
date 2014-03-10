@@ -5125,8 +5125,8 @@ textarea.input-group-sm > .input-group-btn > .btn
 }
 .navbar-default
 {
-    border-color: #e7e7e7;
-    background-color: #f8f8f8;
+    border-color: 0;
+    background-color: transparent;
 }
 .navbar-default .navbar-brand
 {
@@ -5140,7 +5140,7 @@ textarea.input-group-sm > .input-group-btn > .btn
 }
 .navbar-default .navbar-text
 {
-    color: #777;
+    color: #f2f2f2;
 }
 .navbar-default .navbar-nav > li > a
 {
@@ -5157,7 +5157,7 @@ textarea.input-group-sm > .input-group-btn > .btn
 .navbar-default .navbar-nav > .active > a:focus
 {
     color: #555;
-    background-color: #e7e7e7;
+    background-color: rgba(0, 0, 0, 0);
 }
 .navbar-default .navbar-nav > .disabled > a,
 .navbar-default .navbar-nav > .disabled > a:hover,
@@ -5182,14 +5182,14 @@ textarea.input-group-sm > .input-group-btn > .btn
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form
 {
-    border-color: #e7e7e7;
+    border-color: 0;
 }
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus
 {
     color: #555;
-    background-color: #e7e7e7;
+    background-color: rgba(0, 0, 0, 0);
 }
 @media (max-width: 767px)
 {
@@ -5208,7 +5208,7 @@ textarea.input-group-sm > .input-group-btn > .btn
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus
     {
         color: #555;
-        background-color: #e7e7e7;
+        background-color: rgba(0, 0, 0, 0);
     }
     .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a,
   .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover,
@@ -11709,9 +11709,68 @@ dd.image-caption
 {
     padding: 22px 0;
 }
+.app-sign
+{
+    font-size: 25px;
+    line-height: 1;
+
+    display: inline-block;
+
+    width: 50px;
+    height: 50px;
+    padding: 11px;
+
+    text-align: center;
+
+    color: #eee;
+    border: 1px solid #eee;
+    border-radius: 25px;
+}
+.app-sign.app-sign-block
+{
+    display: block;
+
+    margin: 22px auto 0;
+}
+.app-sign.app-sign-lg
+{
+    font-size: 50px;
+
+    width: 100px;
+    height: 100px;
+    padding: 22px;
+
+    border-radius: 50px;
+}
+.app-sign .icon-bar
+{
+    display: block;
+
+    width: 22px;
+    height: 2px;
+
+    border-color: #333;
+    border-radius: 1px;
+    background-color: #ccc;
+}
+.app-sign .icon-bar + .icon-bar
+{
+    margin-top: 4px;
+}
+.app-sign-default
+{
+    color: #333;
+    border-color: #333;
+}
 .app-brandbar
 {
     padding: 22px;
+
+    color: #eee;
+}
+.app-brand
+{
+    text-align: center;
 }
 .app-footer
 {
@@ -11728,5 +11787,34 @@ dd.image-caption
     border-bottom: 1px solid #333;
     background: url(../assets/img/header-bg.jpg) no-repeat 0 0 transparent;
     background-size: cover;
+}
+.app-header-hero
+{
+    font-size: 24px;
+    font-weight: 200;
+    line-height: 2.14285714;
+
+    margin-bottom: 30px;
+    padding: 22px;
+    padding: 30px;
+
+    text-align: center;
+
+    color: #eee;
+}
+.app-header-hero h1,
+.app-header-hero .h1
+{
+    line-height: 1;
+
+    color: inherit;
+}
+.app-header-hero p
+{
+    line-height: 1.4;
+}
+.app-header-action
+{
+    text-align: center;
 }
 /*# sourceMappingURL=kaiser.css.map */

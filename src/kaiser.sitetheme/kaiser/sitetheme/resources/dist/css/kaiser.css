@@ -3929,18 +3929,18 @@ textarea.input-group-sm > .input-group-btn > .btn {
   border-color: 0;
 }
 .navbar-default .navbar-brand {
-  color: #777777;
+  color: #f2f2f2;
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
-  color: #5e5e5e;
+  color: #d9d9d9;
   background-color: transparent;
 }
 .navbar-default .navbar-text {
   color: #f2f2f2;
 }
 .navbar-default .navbar-nav > li > a {
-  color: #777777;
+  color: #f2f2f2;
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
@@ -3950,7 +3950,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-  color: #555555;
+  color: #ed6262;
   background-color: rgba(0, 0, 0, 0);
 }
 .navbar-default .navbar-nav > .disabled > a,
@@ -3977,11 +3977,11 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
   background-color: rgba(0, 0, 0, 0);
-  color: #555555;
+  color: #ed6262;
 }
 @media (max-width: 767px) {
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-    color: #777777;
+    color: #f2f2f2;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
@@ -3991,7 +3991,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-    color: #555555;
+    color: #ed6262;
     background-color: rgba(0, 0, 0, 0);
   }
   .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a,
@@ -4002,7 +4002,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-default .navbar-link {
-  color: #777777;
+  color: #f2f2f2;
 }
 .navbar-default .navbar-link:hover {
   color: #333333;
@@ -9066,6 +9066,9 @@ dd.image-caption {
 .app-footer {
   padding: 22px;
   border-top: 1px solid #eeeeee;
+}
+.app-footer-content {
+  color: #999999;
 }
 .app-toolbar + .app-header {
   margin-top: 50px;

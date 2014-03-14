@@ -15,9 +15,9 @@ env.port = '22222'
 env.user = 'root'
 env.hosts = ['6zu4']
 env.webserver = '/opt/webserver/buildout.webserver'
-env.code_root = '/opt/sites/plonesite/buildout.plonesite'
-env.local_root = '/Users/cb/dev/ade25/ade25.blueprint'
-env.sitename = 'plonesite'
+env.code_root = '/opt/sites/kaiser/buildout.kaiser'
+env.local_root = '/Users/cb/dev/kaiser/buildout.kaiser'
+env.sitename = 'kaiser'
 env.code_user = 'root'
 env.prod_user = 'www'
 

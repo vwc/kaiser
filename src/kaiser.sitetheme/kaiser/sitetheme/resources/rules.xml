@@ -75,7 +75,7 @@
 
         <!-- Global navigation -->
         <replace css:content="#portal-globalnav li"
-            css:theme-children="#main-nav" />
+            css:theme-children="app-navbar-main" />
 
         <!-- Breadcrumbs -->
         <replace css:content-children='#portal-breadcrumbs'

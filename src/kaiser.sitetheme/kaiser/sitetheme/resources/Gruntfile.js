@@ -172,22 +172,28 @@ module.exports = function (grunt) {
         },
 
         sed: {
-            'clean-source-assets': {
+            cleanSourceAssets: {
                 path: 'dist/',
                 pattern: '../../assets/',
                 replacement: '../assets/',
                 recursive: true
             },
-            'clean-source-css': {
+            cleanSourceCss: {
                 path: 'dist/',
                 pattern: '../dist/css/styles.css',
                 replacement: 'css/styles.css',
                 recursive: true
             },
-            'clean-source-js': {
+            cleanSourceJS: {
                 path: 'dist/',
                 pattern: '../dist/js/kaiser.js',
                 replacement: 'js/kaiser.min.js',
+                recursive: true
+            },
+            cleanLogoPath: {
+                path: 'dist',
+                pattern: '../dist/img/kaiser-licht-und-ton.png',
+                replace: 'img/kaiser-licht-und-ton.png',
                 recursive: true
             }
         },

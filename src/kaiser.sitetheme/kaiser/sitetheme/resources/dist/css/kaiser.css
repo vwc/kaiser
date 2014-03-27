@@ -11777,6 +11777,13 @@ dd.image-caption
 {
     text-align: center;
 }
+.app-brand > img
+{
+    display: block;
+
+    margin-right: auto;
+    margin-left: auto;
+}
 .app-footer
 {
     padding: 22px;

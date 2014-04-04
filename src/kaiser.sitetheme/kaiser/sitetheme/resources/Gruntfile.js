@@ -131,6 +131,18 @@ module.exports = function (grunt) {
                 dest: 'dist/assets/img/'
             }
         },
+
+        imagemin: {
+            dynamic: {
+                files: [{
+                    expand: true,
+                    cwd: 'assets/img/',
+                    src: ['**/*.{png,jpg,gif}'],
+                    dest: 'dist/assets/img/'
+                }]
+            }
+        },
+
         rev: {
             options:  {
                 algorithm: 'sha256',
@@ -160,22 +172,28 @@ module.exports = function (grunt) {
         },
 
         sed: {
-            'clean-source-assets': {
+            cleanSourceAssets: {
                 path: 'dist/',
                 pattern: '../../assets/',
                 replacement: '../assets/',
                 recursive: true
             },
-            'clean-source-css': {
+            cleanSourceCss: {
                 path: 'dist/',
                 pattern: '../dist/css/styles.css',
                 replacement: 'css/styles.css',
                 recursive: true
             },
-            'clean-source-js': {
+            cleanSourceJS: {
                 path: 'dist/',
                 pattern: '../dist/js/kaiser.js',
                 replacement: 'js/kaiser.min.js',
+                recursive: true
+            },
+            cleanLogoPath: {
+                path: 'dist',
+                pattern: '../assets/img/kaiser-licht-und-ton.png',
+                replacement: 'assets/img/kaiser-licht-und-ton.png',
                 recursive: true
             }
         },
@@ -253,10 +271,11 @@ module.exports = function (grunt) {
     grunt.registerTask('dist-js', ['concat', 'uglify']);
 
     // CSS distribution task.
-    grunt.registerTask('dist-css', ['less', 'csscomb']);
+    grunt.registerTask('less-compile', ['less:compileTheme']);
+    grunt.registerTask('dist-css', ['less-compile', 'csscomb', 'less:minify']);
 
     // Assets distribution task.
-    grunt.registerTask('dist-assets', ['copy']);
+    grunt.registerTask('dist-assets', ['newer:copy', 'newer:imagemin']);
 
     // Cache buster distribution task.
     grunt.registerTask('dist-cb', ['rev']);
@@ -268,7 +287,7 @@ module.exports = function (grunt) {
     grunt.registerTask('dist-cc', ['test', 'concurrent:cj', 'concurrent:ha']);
 
     // Development task.
-    grunt.registerTask('dev', ['dist-css', 'dist-js', 'dist-html']);
+    grunt.registerTask('dev', ['less-compile', 'dist-js', 'dist-html']);
 
     // Full distribution task.
     grunt.registerTask('dist', ['clean', 'dist-css', 'dist-js', 'dist-html', 'dist-assets']);

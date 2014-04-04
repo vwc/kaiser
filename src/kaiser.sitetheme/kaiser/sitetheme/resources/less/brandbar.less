@@ -9,4 +9,18 @@
 
 .app-brand {
     .text-center();
+    > img {
+      .center-block();
+    }
+}
+
+.app-navbar-nav {
+  > .selected > a {
+    &,
+    &:hover,
+    &:focus {
+      color: @navbar-default-link-active-color;
+      background-color: @navbar-default-link-active-bg;
+    }
+  }
 }

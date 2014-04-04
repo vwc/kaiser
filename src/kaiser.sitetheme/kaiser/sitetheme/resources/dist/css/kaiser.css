@@ -5130,12 +5130,12 @@ textarea.input-group-sm > .input-group-btn > .btn
 }
 .navbar-default .navbar-brand
 {
-    color: #777;
+    color: #f2f2f2;
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus
 {
-    color: #5e5e5e;
+    color: #d9d9d9;
     background-color: transparent;
 }
 .navbar-default .navbar-text
@@ -5144,7 +5144,7 @@ textarea.input-group-sm > .input-group-btn > .btn
 }
 .navbar-default .navbar-nav > li > a
 {
-    color: #777;
+    color: #f2f2f2;
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus
@@ -5156,7 +5156,7 @@ textarea.input-group-sm > .input-group-btn > .btn
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus
 {
-    color: #555;
+    color: #ed6262;
     background-color: rgba(0, 0, 0, 0);
 }
 .navbar-default .navbar-nav > .disabled > a,
@@ -5188,14 +5188,14 @@ textarea.input-group-sm > .input-group-btn > .btn
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus
 {
-    color: #555;
+    color: #ed6262;
     background-color: rgba(0, 0, 0, 0);
 }
 @media (max-width: 767px)
 {
     .navbar-default .navbar-nav .open .dropdown-menu > li > a
     {
-        color: #777;
+        color: #f2f2f2;
     }
     .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus
@@ -5207,7 +5207,7 @@ textarea.input-group-sm > .input-group-btn > .btn
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus
     {
-        color: #555;
+        color: #ed6262;
         background-color: rgba(0, 0, 0, 0);
     }
     .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a,
@@ -5220,7 +5220,7 @@ textarea.input-group-sm > .input-group-btn > .btn
 }
 .navbar-default .navbar-link
 {
-    color: #777;
+    color: #f2f2f2;
 }
 .navbar-default .navbar-link:hover
 {
@@ -11742,6 +11742,11 @@ dd.image-caption
 
     border-radius: 50px;
 }
+.app-sign:focus,
+.app-sign:hover
+{
+    text-decoration: none;
+}
 .app-sign .icon-bar
 {
     display: block;
@@ -11772,11 +11777,29 @@ dd.image-caption
 {
     text-align: center;
 }
+.app-brand > img
+{
+    display: block;
+
+    margin-right: auto;
+    margin-left: auto;
+}
+.app-navbar-nav > .selected > a,
+.app-navbar-nav > .selected > a:hover,
+.app-navbar-nav > .selected > a:focus
+{
+    color: #ed6262;
+    background-color: rgba(0, 0, 0, 0);
+}
 .app-footer
 {
     padding: 22px;
 
     border-top: 1px solid #eee;
+}
+.app-footer-content
+{
+    color: #999;
 }
 .app-toolbar + .app-header
 {

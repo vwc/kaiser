@@ -192,8 +192,8 @@ module.exports = function (grunt) {
             },
             cleanLogoPath: {
                 path: 'dist',
-                pattern: '../assets/img/kaiser-licht-und-ton.png',
-                replacement: 'assets/img/kaiser-licht-und-ton.png',
+                pattern: '../assets/img/logo.png',
+                replacement: 'assets/img/logo.png',
                 recursive: true
             }
         },

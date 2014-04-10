@@ -4,8 +4,8 @@ from plone import api
 from plone.app.layout.navigation.interfaces import INavigationRoot
 
 
-class FrontageView(grok.View):
-    grok.content(INavigationRoot)
+class FrontpageView(grok.View):
+    grok.context(INavigationRoot)
     grok.require('zope2.View')
     grok.name('frontpage-view')
 

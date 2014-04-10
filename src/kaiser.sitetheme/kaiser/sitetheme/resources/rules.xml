@@ -104,8 +104,12 @@
                 css:theme-children="#app-signin-content"
                 css:if-content="body.template-pwreset_finish" />
 
+        <replace css:content-children=".documentFirstHeading"
+            css:theme-children="#app-hero-title" />
+        <replace css:content-children=".documentDescription"
+            css:theme-children="#app-hero-abstract" />
         <!-- Document Content -->
-        <replace css:content-children="#content"
+        <replace css:content-children="#content-core"
             css:theme-children="#content" />
 
         <before css:content=".portalMessage" css:theme="#content" />

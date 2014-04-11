@@ -258,7 +258,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: 'Proxima Nova', 'Montserrat', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'proxima-nova', 'Montserrat', "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.42857143;
   color: #333333;
@@ -340,8 +340,8 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: 'Proxima Nova', 'Montserrat', "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 400;
+  font-family: 'proxima-nova', 'Montserrat', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 600;
   line-height: 1.1;
   color: inherit;
 }
@@ -3944,13 +3944,13 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  color: #333333;
+  color: #3399cc;
   background-color: transparent;
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-  color: #be1d23;
+  color: #3399cc;
   background-color: rgba(0, 0, 0, 0);
 }
 .navbar-default .navbar-nav > .disabled > a,
@@ -3977,7 +3977,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
   background-color: rgba(0, 0, 0, 0);
-  color: #be1d23;
+  color: #3399cc;
 }
 @media (max-width: 767px) {
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
@@ -3985,13 +3985,13 @@ textarea.input-group-sm > .input-group-btn > .btn {
   }
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-    color: #333333;
+    color: #3399cc;
     background-color: transparent;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-    color: #be1d23;
+    color: #3399cc;
     background-color: rgba(0, 0, 0, 0);
   }
   .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a,
@@ -4005,7 +4005,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
   color: #f2f2f2;
 }
 .navbar-default .navbar-link:hover {
-  color: #333333;
+  color: #3399cc;
 }
 .navbar-inverse {
   background-color: #222222;
@@ -9075,7 +9075,7 @@ dd.image-caption {
 .app-navbar-nav > .selected > a,
 .app-navbar-nav > .selected > a:hover,
 .app-navbar-nav > .selected > a:focus {
-  color: #be1d23;
+  color: #3399cc;
   background-color: rgba(0, 0, 0, 0);
 }
 .app-box {
@@ -9121,6 +9121,10 @@ dd.image-caption {
 }
 .app-header-hero p {
   line-height: 1.4;
+}
+.app-content-body {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .app-header-action {
   text-align: center;

@@ -104,8 +104,10 @@
                 css:theme-children="#app-signin-content"
                 css:if-content="body.template-pwreset_finish" />
 
+        <!-- Move document first heading -->
         <replace css:content-children=".documentFirstHeading"
             css:theme-children="#app-hero-title" />
+        <!-- Move content abstract -->
         <replace css:content-children=".documentDescription"
             css:theme-children="#app-hero-abstract" />
         <!-- Document Content -->

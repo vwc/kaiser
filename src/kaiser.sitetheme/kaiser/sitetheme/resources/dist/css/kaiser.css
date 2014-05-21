@@ -11644,30 +11644,56 @@ dd.image-caption
     content: '\e803';
 }
 /* '' */
-.app-simple
+.app-layout-simple
 {
-    margin-top: 50px;
-
-    border-top: 11px solid #be1d23;
+    background: #333;
 }
 .app-signin
 {
-    display: block;
-
-    max-width: 768px;
     margin-top: 100px;
-    margin-right: auto;
-    margin-left: auto;
 
-    border: 1px solid #fff;
-    border-radius: 4px;
-    background: #fff;
-    background-image: -webkit-linear-gradient(top, #fff 0%, #eee 100%);
-    background-image:         linear-gradient(to bottom, #fff 0%, #eee 100%);
-    background-repeat: repeat-x;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, .15);
+    border-radius: 0;
+}
+.app-signin-header
+{
+    color: #eee;
+    background: #333;
+}
+.app-signin-title
+{
+    font-weight: 300;
+}
+.app-signin-content
+{
+    padding: 22px 0;
+}
+.app-signin-group
+{
+    padding: 0;
 
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffeeeeee', GradientType=0);
+    background: transparent;
+}
+.app-signin-group.app-signin-group-text
+{
+    margin-top: 22px;
+    padding: 44px 0;
+
+    border-top: 1px dotted #999;
+}
+.app-signin-group label,
+.app-signin-group .signin-label
+{
+    font-weight: 300;
+
+    color: #555;
+}
+.app-signin-control
+{
+    padding: 22px 0 44px;
+}
+.app-signin-control.app-signin-control-bordered
+{
+    border-bottom: 1px dotted #999;
 }
 .page-aside
 {
@@ -11678,18 +11704,6 @@ dd.image-caption
 .page-signin
 {
     color: #999;
-    background: #fff;
-}
-.page-signin .page-content
-{
-    padding: 22px;
-}
-@media (min-width: 768px)
-{
-    .page-signin
-    {
-        border-left: 1px solid #eee;
-    }
 }
 .page-signin .documentDescription
 {
@@ -11705,9 +11719,10 @@ dd.image-caption
 
     border-bottom: 5px solid #5cb85c;
 }
+.app-signin-actions,
 .app-register-actions
 {
-    padding: 22px 0;
+    padding: 22px;
 }
 .app-sign
 {

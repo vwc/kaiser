@@ -111,7 +111,14 @@
         <replace css:content-children=".documentDescription"
             css:theme-children="#app-hero-abstract" />
         <!-- Document Content -->
-        <replace css:content-children="#content-core"
+        <rules css:if-content="body.portaltype-ade25-panelpage-page">
+            <replace css:content-children="#content-core"
+                css:theme-children="#content" />
+            <after css:content=".cbp-spmenu"
+                css:theme-children="#content" />
+        </rules>
+
+        <replace css:content-children="#content"
             css:theme-children="#content" />
 
         <before css:content=".portalMessage" css:theme="#content" />

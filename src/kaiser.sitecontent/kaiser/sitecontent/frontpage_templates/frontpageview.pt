@@ -18,6 +18,9 @@
             <p>This page will display the associated panel page content from
                 the page with the id "frontpage-content"</p>
         </div>
+
+        <div tal:replace="structure view/panelpage" />
+
     </div>
 
   </metal:content-core>

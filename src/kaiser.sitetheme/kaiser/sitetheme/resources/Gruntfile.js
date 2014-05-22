@@ -194,6 +194,11 @@ module.exports = function (grunt) {
                 pattern: '../assets/img/logo.png',
                 replacement: 'assets/img/logo.png',
                 recursive: true
+            },
+            cleanLogo1: {
+                path: 'dist/theme.html',
+                pattern: '../assets/img/',
+                replacement: 'assets/img/',
             }
         },
 

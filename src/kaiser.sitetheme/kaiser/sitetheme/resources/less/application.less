@@ -9,6 +9,22 @@
     }
 }
 
+.brand-blue {
+  color: @app-blue;
+}
+.brand-purple {
+  color: @app-purple;
+}
+.brand-pink {
+  color: @app-pink;
+}
+.brand-red {
+  color: @app-red;
+}
+.brand-orange {
+  color: @app-orange;
+}
+
 .app-toolbar + .app-header {
     margin-top: @navbar-height;
 }
@@ -52,7 +68,19 @@
     padding-bottom: @line-height-computed;
 }
 
+.cb-margin-bottom {
+  margin-bottom: @line-height-computed;
+}
+
 .app-panelpage-item {
     padding-left: @padding-base-horizontal;
     border-left: 1px solid @gray-light;
+}
+
+.section-leistungen,
+.section-leistungen-1 {
+  .panelgrid-row {
+    padding-left: @padding-base-horizontal;
+    border-left: 1px solid @gray-light;    
+  }
 }

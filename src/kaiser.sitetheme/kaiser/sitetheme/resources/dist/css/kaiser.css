@@ -11831,6 +11831,10 @@ dd.image-caption
 {
     font-weight: 600;
 }
+.template-navigation-controlpanel .label:empty
+{
+    display: block;
+}
 .brand-blue
 {
     color: #39c;

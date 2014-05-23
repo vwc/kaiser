@@ -19,6 +19,8 @@
     <theme href="dist/signin.html" css:if-content="body.template-pwreset_form" />
     <theme href="dist/signin.html" css:if-content="body.template-pwreset_finish" />
 
+    <theme href="dist/frontpage.html" css:if-content="body.template-frontpage-view" />
+
     <!-- Rules applying to a standard Plone web page -->
     <rules css:if-content="#visual-portal-wrapper">
 
@@ -117,6 +119,10 @@
             <after css:content=".cbp-spmenu"
                 css:theme-children="#content" />
         </rules>
+
+        <replace css:content-children="#content"
+            css:theme-children="#content-core"
+            css:if-content="body.template-frontpage-view" />
 
         <replace css:content-children="#content"
             css:theme-children="#content" />

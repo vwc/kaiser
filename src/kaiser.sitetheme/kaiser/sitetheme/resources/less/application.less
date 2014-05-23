@@ -73,6 +73,14 @@
     }
 }
 
+.app-header-teaserbar {
+  margin-top: ceil((@navbar-height * 1.5));
+  border-top: 1px solid @gray-lighter;
+  > .app-header-teaserbar-row {
+    margin-top: -(@navbar-height * 1.5);
+  }
+}
+
 .app-content-body {
     padding-top: @jumbotron-padding;
     padding-bottom: @jumbotron-padding;
@@ -100,6 +108,6 @@
 .section-leistungen-1 {
   .panelgrid-row {
     padding-left: @padding-base-horizontal;
-    border-left: 1px solid @gray-light;    
+    border-left: 1px solid @gray-light;
   }
 }

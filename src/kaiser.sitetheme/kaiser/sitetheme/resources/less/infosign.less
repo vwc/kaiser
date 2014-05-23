@@ -21,10 +21,25 @@
         padding: @line-height-computed;
         border-radius: @navbar-height;
         font-size: @navbar-height;
+        > .icon:before {
+            margin-left: 0.1em;
+        }
     }
     &:focus,
     &:hover {
         text-decoration: none;
+    }
+    &.brand-blue {
+        border-color: @app-blue;
+    }
+    &.brand-purple {
+        border-color: @app-purple;
+    }
+    &.brand-pink {
+        border-color: @app-pink;
+    }
+    &.brand-red {
+        border-color: @app-red;
     }
     .icon-bar {
         display: block;
@@ -42,4 +57,10 @@
 .app-sign-default {
     color: @text-color;
     border-color: @text-color;
+}
+
+.app-sign-teaser {
+    color: @text-color;
+    border-color: @text-color;
+    background-color: #000;
 }

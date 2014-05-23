@@ -11757,10 +11757,30 @@ dd.image-caption
 
     border-radius: 50px;
 }
+.app-sign.app-sign-lg > .icon:before
+{
+    margin-left: .1em;
+}
 .app-sign:focus,
 .app-sign:hover
 {
     text-decoration: none;
+}
+.app-sign.brand-blue
+{
+    border-color: #39c;
+}
+.app-sign.brand-purple
+{
+    border-color: #96c;
+}
+.app-sign.brand-pink
+{
+    border-color: #939;
+}
+.app-sign.brand-red
+{
+    border-color: #c33;
 }
 .app-sign .icon-bar
 {
@@ -11781,6 +11801,12 @@ dd.image-caption
 {
     color: #333;
     border-color: #333;
+}
+.app-sign-teaser
+{
+    color: #333;
+    border-color: #333;
+    background-color: #000;
 }
 .app-brandbar
 {
@@ -11901,6 +11927,16 @@ dd.image-caption
 .app-header-hero p
 {
     line-height: 1.4;
+}
+.app-header-teaserbar
+{
+    margin-top: 75px;
+
+    border-top: 1px solid #eee;
+}
+.app-header-teaserbar > .app-header-teaserbar-row
+{
+    margin-top: -75px;
 }
 .app-content-body
 {

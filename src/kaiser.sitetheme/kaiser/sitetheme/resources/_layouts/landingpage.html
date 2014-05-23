@@ -1,0 +1,64 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
+  <head>
+    <!-- Meta, title, CSS, favicons, etc. -->
+    {% include head.html %}
+  </head>
+  <body>
+    <a class="sr-only" href="#content">Skip navigation</a>
+    {% include toolbar.html %}
+
+    <div class="app-header">
+      {% include brandbar.html %}
+      <div class="container app-header-hero">
+        <h1 class="app-hero-title" id="app-hero-title">{{ page.title }}</h1>
+        <div class="app-header-teaserbar" id="app-header-teaserbar">
+          <div class="row app-header-teaserbar-row">
+            <div class="col-xs-12 col-sm-3">
+              <a class="app-sign app-sign-block app-sign-teaser app-sign-lg brand-blue" href="#app-content-bottom">
+                <i class="icon icon-mic"></i>
+              </a>
+              <a href="/tontechnik">Tontechnik</a>
+            </div>
+            <div class="col-xs-12 col-sm-3">
+              <a class="app-sign app-sign-block app-sign-teaser app-sign-lg brand-purple" href="#app-content-bottom">
+                <i class="icon icon-adjust"></i>
+              </a>
+              <a href="/lichttechnik">Lichttechnik</a>
+            </div>
+            <div class="col-xs-12 col-sm-3">
+              <a class="app-sign app-sign-block app-sign-teaser app-sign-lg brand-pink" href="#app-content-bottom">
+                <i class="icon icon-cog"></i>
+              </a>
+              <a href="/tontechnik">B&uuml;hnentechnik &amp; Rigging</a>
+            </div>
+            <div class="col-xs-12 col-sm-3">
+              <a class="app-sign app-sign-block app-sign-teaser app-sign-lg brand-blue" href="#app-content-bottom">
+                <i class="icon icon-params"></i>
+              </a>
+              <a href="/tontechnik">DJ Technik</a>
+            </div>
+          </div>
+        </div>
+        <div class="app-header-action text-center" id="app-header-action">
+          <a class="app-sign app-sign-block app-sign-lg" href="#app-content-bottom">
+            &#8595;
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+        <div role="main">
+          {{ content }}
+        </div>
+    </div>
+
+    {% include footer.html %}
+    {% include javascript.html %}
+    {% include webfonts.html %}
+  </body>
+</html>

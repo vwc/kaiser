@@ -109,11 +109,17 @@ module.exports = function (grunt) {
         },
 
         copy: {
-            fonts: {
+            fontawesome: {
                 expand: true,
                 flatten: true,
                 cwd: 'bower_components/',
                 src: ['font-awesome/fonts/*'],
+                dest: 'dist/assets/fonts/'
+            },
+            fonts: {
+                expand: true,
+                flatten: true,
+                src: ['assets/fonts/*'],
                 dest: 'dist/assets/fonts/'
             },
             ico: {

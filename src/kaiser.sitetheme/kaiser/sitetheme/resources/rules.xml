@@ -120,9 +120,11 @@
                 css:theme-children="#content" />
         </rules>
 
-        <replace css:content-children="#content"
-            css:theme-children="#content-core"
-            css:if-content="body.template-frontpage-view" />
+        <rules css:if-content="body.portaltype-plone-site">
+            <replace css:content-children="#content"
+                css:theme-children="#content-core"
+                css:if-content="body.template-frontpage-view" />
+        </rules>
 
         <replace css:content-children="#content"
             css:theme-children="#content" />

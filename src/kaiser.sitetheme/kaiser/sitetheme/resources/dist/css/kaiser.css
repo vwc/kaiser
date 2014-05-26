@@ -11837,6 +11837,10 @@ dd.image-caption
 {
     color: #999;
 }
+.app-box-highlight
+{
+    font-weight: 500;
+}
 .app-footer
 {
     padding: 22px;

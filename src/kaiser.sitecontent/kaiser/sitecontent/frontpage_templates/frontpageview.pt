@@ -11,13 +11,6 @@
   <metal:content-core define-macro="main">
 
     <div class="app-page">
-        <div class="page-header app-page-header">
-            <h1>Frontpage View</h1>
-        </div>
-        <div class="app-page-content" id="content-core">
-            <p>This page will display the associated panel page content from
-                the page with the id "frontpage-content"</p>
-        </div>
 
         <div tal:replace="structure view/panelpage" />
 

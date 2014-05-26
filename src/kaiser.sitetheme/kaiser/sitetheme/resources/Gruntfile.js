@@ -122,6 +122,12 @@ module.exports = function (grunt) {
                 src: ['assets/font/*'],
                 dest: 'dist/assets/fonts/'
             },
+            css: {
+                expand: true,
+                flatten: true,
+                src: ['assets/css/*'],
+                dest: 'dist/assets/css/'
+            },
             ico: {
                 expand: true,
                 flatten: true,

@@ -11976,7 +11976,8 @@ dd.image-caption
     border-left: 1px solid #999;
 }
 .section-leistungen .panelgrid-row,
-.section-leistungen-1 .panelgrid-row
+.section-leistungen-1 .panelgrid-row,
+.section-produkte .panelgrid-row
 {
     padding-left: 12px;
 

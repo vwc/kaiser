@@ -11949,6 +11949,8 @@ dd.image-caption
 }
 .app-header-teaserbar > .app-header-teaserbar-row .teaserbar-link
 {
+    font-size: 16px;
+
     color: #fff;
 }
 .app-content-body

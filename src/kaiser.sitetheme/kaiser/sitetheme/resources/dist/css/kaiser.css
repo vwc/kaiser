@@ -11744,17 +11744,17 @@ dd.image-caption
 }
 .app-sign.app-sign-lg
 {
-    font-size: 50px;
+    font-size: 75px;
 
     width: 100px;
     height: 100px;
-    padding: 25px;
+    padding: 12px;
 
     border-radius: 50px;
 }
 .app-sign.app-sign-lg > .icon:before
 {
-    margin-left: 5px;
+    margin-left: 0;
 }
 .app-sign:focus,
 .app-sign:hover
@@ -11819,6 +11819,12 @@ dd.image-caption
 
     margin-right: auto;
     margin-left: auto;
+}
+.app-navbar-nav
+{
+    font-weight: 200;
+
+    text-transform: uppercase;
 }
 .app-navbar-nav > .selected > a,
 .app-navbar-nav > .selected > a:hover,
@@ -11949,7 +11955,7 @@ dd.image-caption
 }
 .app-header-teaserbar > .app-header-teaserbar-row .teaserbar-link
 {
-    font-size: 16px;
+    font-size: 18px;
 
     color: #fff;
 }

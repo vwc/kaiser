@@ -18,11 +18,11 @@
     }
     &.app-sign-lg {
         .square((@navbar-height * 2));
-        padding: @line-height-computed;
+        padding: floor((@line-height-computed / 2));
         border-radius: @navbar-height;
-        font-size: @navbar-height;
+        font-size: floor((@navbar-height * 1.5));
         > .icon:before {
-            margin-left: 5px;
+            margin-left: 0px;
         }
     }
     &:focus,

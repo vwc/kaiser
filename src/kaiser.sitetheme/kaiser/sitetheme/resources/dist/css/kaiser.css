@@ -11760,6 +11760,8 @@ dd.image-caption
 .app-sign:hover
 {
     text-decoration: none;
+
+    color: #fff;
 }
 .app-sign.brand-blue
 {
@@ -11802,6 +11804,10 @@ dd.image-caption
     color: #333;
     border-color: #333;
     background-color: #000;
+}
+.app-sign-teaser:hover
+{
+    color: #fff;
 }
 .app-brandbar
 {
@@ -11846,6 +11852,11 @@ dd.image-caption
 .app-box-highlight
 {
     font-weight: 500;
+
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    background: #f5f5f5;
 }
 .app-footer
 {
@@ -11857,15 +11868,33 @@ dd.image-caption
 {
     color: #999;
 }
-.app-logobar .carousel-control.left,
-.app-logobar .carousel-control.right
+.app-logobar .carousel-control
 {
+    text-align: left;
+}
+.app-logobar .carousel-control.left
+{
+    left: -50px;
+
     background: transparent;
 }
-.app-logobar-slider
+.app-logobar .carousel-control.right
 {
-    padding-right: 50px;
-    padding-left: 50px;
+    right: -50px;
+
+    text-align: right;
+
+    background: transparent;
+}
+.app-logobar-slider img,
+.app-logobar-slider a > img
+{
+    line-height: 1;
+
+    display: block;
+
+    max-width: 100%;
+    height: auto;
 }
 .wf-active b,
 .wf-active strong

@@ -13,13 +13,25 @@
 
 .app-logobar {
   .carousel-control {
-    &.left,
-    &.right {
+    text-align: left;
+    &.left {
+      left: -(@line-height-computed * 2);
       background: transparent;
+    }
+    &.right {
+      right: -(@line-height-computed * 2);
+      background: transparent;
+      text-align: right;
     }
   }
 }
 .app-logobar-slider {
-  padding-right: @navbar-height;
-  padding-left: @navbar-height;
+  //padding-right: @navbar-height;
+  //padding-left: @navbar-height;
+  // Account for jankitude on images
+    img,
+    a > img {
+      .img-responsive();
+      line-height: 1;
+    }
 }
